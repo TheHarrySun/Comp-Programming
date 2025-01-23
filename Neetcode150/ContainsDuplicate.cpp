@@ -29,5 +29,8 @@ int main()
     vector<int> nums2 = {1, 2, 3, 4};
     Solution obj;
     cout << obj.hasDuplicate(nums1) << endl;
+    // should output as 1 for true
+
     cout << obj.hasDuplicate(nums2) << endl;
+    // should output as 0 for false
 }

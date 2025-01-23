@@ -30,11 +30,11 @@ int main()
     Solution obj;
     string s1 = "racecar";
     string t1 = "carrace";
-
     cout << obj.isAnagram(s1, t1) << endl;
+    // should output 1 for true
 
     string s2 = "jar";
     string t2 = "jam";
-
     cout << obj.isAnagram(s2, t2) << endl;
+    // should output 0 for false
 }
