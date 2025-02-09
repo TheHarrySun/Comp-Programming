@@ -1,3 +1,11 @@
+/* ----------------------------------------------------- */
+/* TwoSum.cpp                                            */
+/* Author: Harrison Xu                                   */
+/* Email: hx2004@princeton.edu                           */
+/* ----------------------------------------------------- */
+
+/* LeetCode Problem: Two Sum */
+
 #include <iostream>
 #include <vector>
 #include <unordered_map>

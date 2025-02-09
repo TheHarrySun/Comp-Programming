@@ -1,3 +1,11 @@
+/* ----------------------------------------------------- */
+/* EncodeAndDecodeStrings.cpp                            */
+/* Author: Harrison Xu                                   */
+/* Email: hx2004@princeton.edu                           */
+/* ----------------------------------------------------- */
+
+/* LeetCode Problem: Encode and Decode Strings */
+
 #include <vector>
 #include <string>
 #include <iostream>

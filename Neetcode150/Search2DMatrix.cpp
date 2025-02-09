@@ -1,3 +1,11 @@
+/* ----------------------------------------------------- */
+/* Search2DMatrix.cpp                                           */
+/* Author: Harrison Xu                                   */
+/* Email: hx2004@princeton.edu                           */
+/* ----------------------------------------------------- */
+
+/* LeetCode Problem: Search a 2D Matrix */
+
 #include <iostream>
 #include <vector>
 

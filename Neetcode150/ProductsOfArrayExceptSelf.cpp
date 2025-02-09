@@ -1,3 +1,11 @@
+/* ----------------------------------------------------- */
+/* ProductsOfArrayExceptSelf.cpp                         */
+/* Author: Harrison Xu                                   */
+/* Email: hx2004@princeton.edu                           */
+/* ----------------------------------------------------- */
+
+/* LeetCode Problem: Product of Array Except Self */
+
 #include <iostream>
 #include <vector>
 

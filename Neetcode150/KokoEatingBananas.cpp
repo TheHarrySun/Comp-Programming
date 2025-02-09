@@ -1,3 +1,11 @@
+/* ----------------------------------------------------- */
+/* KokoEatingBananas.cpp                                 */
+/* Author: Harrison Xu                                   */
+/* Email: hx2004@princeton.edu                           */
+/* ----------------------------------------------------- */
+
+/* LeetCode Problem: Koko Eating Bananas */
+
 #include <iostream>
 #include <vector>
 

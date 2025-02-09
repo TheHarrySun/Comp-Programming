@@ -1,3 +1,11 @@
+/* ----------------------------------------------------- */
+/* GroupAnagrams.cpp                                     */
+/* Author: Harrison Xu                                   */
+/* Email: hx2004@princeton.edu                           */
+/* ----------------------------------------------------- */
+
+/* LeetCode Problem: Group Anagrams */
+
 #include <vector>
 #include <unordered_map>
 #include <string>

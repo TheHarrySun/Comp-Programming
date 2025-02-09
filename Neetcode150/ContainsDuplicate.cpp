@@ -1,3 +1,11 @@
+/* ----------------------------------------------------- */
+/* ContainsDuplicate.cpp                                 */
+/* Author: Harrison Xu                                   */
+/* Email: hx2004@princeton.edu                           */
+/* ----------------------------------------------------- */
+
+/* LeetCode Problem: Contains Duplicate */
+
 #include <set>
 #include <vector>
 #include <unordered_set>

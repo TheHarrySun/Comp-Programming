@@ -1,3 +1,11 @@
+/* ----------------------------------------------------- */
+/* ValidAnagram.cpp                                           */
+/* Author: Harrison Xu                                   */
+/* Email: hx2004@princeton.edu                           */
+/* ----------------------------------------------------- */
+
+/* LeetCode Problem: Valid Anagram */
+
 #include <iostream>
 #include <string>
 #include <unordered_map>
