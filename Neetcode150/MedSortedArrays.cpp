@@ -6,6 +6,9 @@
 
 /* LeetCode Problem: Median of Two Sorted Arrays */
 
+#include <iostream>
+#include <vector>
+
 class Solution
 {
 public:
