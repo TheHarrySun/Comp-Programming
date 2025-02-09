@@ -9,6 +9,8 @@
 #include <iostream>
 #include <vector>
 
+using namespace std;
+
 class Solution
 {
 public:
@@ -16,4 +18,4 @@ public:
     {
         int half = (nums1.size() + nums2.size()) / 2;
     }
-}
+};
