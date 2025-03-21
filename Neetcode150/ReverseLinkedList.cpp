@@ -5,6 +5,7 @@
 /* ----------------------------------------------------- */
 
 /* LeetCode Problem: Reverse Linked List */
+/* Difficulty: Easy */
 
 #include <iostream>
 #include <vector>
