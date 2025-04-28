@@ -24,6 +24,10 @@ Output
 The output should contain a single integer, the number of hours of work.
 */
 
+/*
+Solved? Yes!
+*/
+
 #include <iostream>
 #include <vector>
 #include <utility>

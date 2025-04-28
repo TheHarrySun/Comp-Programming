@@ -26,6 +26,10 @@ Output
 The output should contain a line with a single integer, the total unhappiness.
 */
 
+/*
+Solved? Yes!
+*/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>

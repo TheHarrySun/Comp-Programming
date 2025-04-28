@@ -23,6 +23,10 @@ The output should contain a line with a single integer, the minimum
 distance between any two students.
 */
 
+/*
+Solved? Yes!
+*/
+
 #include <iostream>
 #include <algorithm>
 #include <vector>
