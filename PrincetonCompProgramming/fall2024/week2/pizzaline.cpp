@@ -6,7 +6,7 @@ using namespace std;
 
 typedef long long ll;
 
-int merge(vector<ll> &positions, int left, int right);
+ll merge(vector<ll> &positions, ll left, ll right);
 
 int main()
 {
@@ -17,36 +17,36 @@ int main()
     {
         cin >> positions[i];
     }
-    int output = merge(positions, 0, n - 1);
+    ll output = merge(positions, 0, n - 1);
     cout << output << endl;
 }
 
-int merge(vector<ll> &positions, int left, int right)
+ll merge(vector<ll> &positions, ll left, ll right)
 {
     if (left >= right)
         return 0;
 
-    int mid = left + (right - left) / 2;
-    int output = 0;
+    ll mid = left + (right - left) / 2;
+    ll output = 0;
     output += merge(positions, left, mid);
     output += merge(positions, mid + 1, right);
 
-    int n1 = mid - left + 1;
-    int n2 = right - mid;
+    ll n1 = mid - left + 1;
+    ll n2 = right - mid;
 
     vector<ll> L(n1), R(n2);
 
-    for (int i = 0; i < n1; i++)
+    for (ll i = 0; i < n1; i++)
     {
         L[i] = positions[left + i];
     }
-    for (int j = 0; j < n2; j++)
+    for (ll j = 0; j < n2; j++)
     {
         R[j] = positions[mid + 1 + j];
     }
-    int i = 0, j = 0;
-    int k = left;
-    int inversions = 0;
+    ll i = 0, j = 0;
+    ll k = left;
+    ll inversions = 0;
     while (i < n1 && j < n2)
     {
         if (L[i] <= R[j])
