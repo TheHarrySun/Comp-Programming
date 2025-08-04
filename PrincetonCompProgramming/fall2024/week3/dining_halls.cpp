@@ -23,7 +23,7 @@ Print one integer: the minimum time needed to make t meals.
 */
 
 /*
-Solved? No
+Solved? Yes!
 */
 
 #include <iostream>
@@ -33,6 +33,20 @@ Solved? No
 using namespace std;
 
 typedef long long ll;
+
+bool check(ll time, vector<ll> cooks, ll meals)
+{
+    ll total = 0;
+    for (ll cook : cooks)
+    {
+        total += time / cook;
+    }
+    if (total >= meals)
+    {
+        return true;
+    }
+    return false;
+}
 
 int main(void)
 {
@@ -44,4 +58,16 @@ int main(void)
     {
         cin >> cooks[i];
     }
+    ll fastest = *min_element(cooks.begin(), cooks.end());
+    ll max = fastest * t;
+
+    ll ans = max;
+    for (ll i = max; i >= 1; i /= 2)
+    {
+        while (check(ans - i, cooks, t))
+        {
+            ans = ans - i;
+        }
+    }
+    cout << ans << endl;
 }
