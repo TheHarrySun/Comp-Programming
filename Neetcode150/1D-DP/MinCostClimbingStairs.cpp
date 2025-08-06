@@ -1,10 +1,10 @@
 /* ----------------------------------------------------- */
-/* ClimbingStairs.cpp                                    */
+/* MinCostClimbingStairs.cpp                             */
 /* Author: Harrison Xu                                   */
 /* Email: hx2004@princeton.edu                           */
 /* ----------------------------------------------------- */
 
-/* LeetCode Problem: Climbing Stairs */
+/* LeetCode Problem: Minimum Cost Climbing Stairs */
 /* Difficulty: Easy */
 
 #include <vector>
@@ -24,23 +24,17 @@ using namespace std;
 class Solution
 {
 public:
-    int climbStairs(int n)
+    int minCostClimbingStairs(vector<int> &cost)
     {
-        if (n == 1)
+        int num_stairs = cost.size();
+        int totalCosts[num_stairs];
+        totalCosts[num_stairs - 1] = cost[num_stairs - 1];
+        totalCosts[num_stairs - 2] = cost[num_stairs - 2];
+
+        for (int i = num_stairs - 3; i >= 0; i--)
         {
-            return 1;
+            totalCosts[i] = min(totalCosts[i + 1] + cost[i], totalCosts[i + 2] + cost[i]);
         }
-        if (n == 2)
-        {
-            return 2;
-        }
-        int ways[n];
-        ways[n - 1] = 1;
-        ways[n - 2] = 2;
-        for (int i = n - 3; i >= 0; i--)
-        {
-            ways[i] = ways[i + 1] + ways[i + 2];
-        }
-        return ways[0];
+        return min(totalCosts[0], totalCosts[1]);
     }
 };

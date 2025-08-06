@@ -1,11 +1,11 @@
 /* ----------------------------------------------------- */
-/* ClimbingStairs.cpp                                    */
+/* HouseRobber.cpp                                       */
 /* Author: Harrison Xu                                   */
 /* Email: hx2004@princeton.edu                           */
 /* ----------------------------------------------------- */
 
-/* LeetCode Problem: Climbing Stairs */
-/* Difficulty: Easy */
+/* LeetCode Problem: House Robber */
+/* Difficulty: Medium */
 
 #include <vector>
 #include <iostream>
@@ -24,23 +24,21 @@ using namespace std;
 class Solution
 {
 public:
-    int climbStairs(int n)
+    int rob(vector<int> &nums)
     {
-        if (n == 1)
+        int size = nums.size();
+        if (size == 1)
         {
-            return 1;
+            return nums[0];
         }
-        if (n == 2)
+        int money[nums.size()];
+        money[0] = nums[0];
+        money[1] = max(nums[1], nums[0]);
+        for (int i = 2; i < size; i++)
         {
-            return 2;
+            money[i] = max(money[i - 2] + nums[i], money[i - 1]);
         }
-        int ways[n];
-        ways[n - 1] = 1;
-        ways[n - 2] = 2;
-        for (int i = n - 3; i >= 0; i--)
-        {
-            ways[i] = ways[i + 1] + ways[i + 2];
-        }
-        return ways[0];
+
+        return money[size - 1];
     }
 };
